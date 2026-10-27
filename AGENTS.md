@@ -3,6 +3,8 @@
 이 저장소는 Pocket Talk의 **온디바이스 타당성 스파이크**다. 제품이 아니라 측정 도구를 만든다.
 작업 목록과 완료 조건은 `TASKS.md`가 기준이다. 작업 전에 `TASKS.md`를 먼저 읽는다.
 
+`TASKS.md` 위치는 `.replworks/TASKS.md` 다.
+
 ## 절대 규칙
 
 1. **실행하지 않은 것은 쓰지 않는다.** 직접 돌려서 출력을 본 것만 "통과"라고 보고한다. 못 돌린 건 "미실행"이라고 적는다.
@@ -34,15 +36,39 @@ M0에서 확정해 아래에 기록한다.
 xcodebuild -version
 xcrun simctl list devices available
 
-# 시뮬레이터 이름 (M0에서 채움)
-DESTINATION="platform=iOS Simulator,name=<M0에서 확인한 iPhone 시뮬레이터>"
+# 시뮬레이터 이름 (M0에서 확정: Xcode 27.1 / iOS 27.0 런타임)
+DESTINATION="platform=iOS Simulator,name=iPhone 16 (iOS 27),OS=27.0"
 
 # 코어 로직 테스트
 cd Package/PocketTalkCore && swift test
 
-# 앱 프로젝트 생성 및 빌드
-xcodegen generate
+# 앱 프로젝트 생성 및 빌드 (원본은 App/PocketTalkSpike/project.yml)
+cd App/PocketTalkSpike && xcodegen generate
 xcodebuild -scheme PocketTalkSpike -destination "$DESTINATION" build
+
+# 시뮬레이터 UI 테스트 (mock으로 20개 시나리오 완주 + JSONL 생성 확인)
+xcodebuild test -scheme PocketTalkSpike -destination "$DESTINATION"
+```
+
+M0 확인값: Xcode 27.1 (iOS SDK 27.1), Swift 6.4, macOS 27.0.1, xcodegen 2.46.0 (Homebrew).
+`xcodegen generate`와 `xcodebuild`는 `App/PocketTalkSpike`에서 실행한다(project.yml 위치).
+
+### 실기기 (iPhone 16)
+
+무료 개발자 프로파일 앱 슬롯이 3개라 UI 테스트 러너를 기기에 함께 설치할 수 없다.
+그래서 앱에 `--autorun-apple` 실행 인자를 두고 Mac에서 원격 실행한다.
+
+```sh
+DEVICE=00008140-001243C93A3A801C   # OrangePhone16 (iPhone 16, iOS 27.0.1)
+cd App/PocketTalkSpike
+xcodebuild -scheme PocketTalkSpike -destination "platform=iOS,id=$DEVICE" -allowProvisioningUpdates build
+xcrun devicectl device install app --device $DEVICE \
+  ~/Library/Developer/Xcode/DerivedData/PocketTalkSpike-*/Build/Products/Debug-iphoneos/PocketTalkSpike.app
+xcrun devicectl device process launch --device $DEVICE --terminate-existing \
+  dev.pockettalk.spike -- --autorun-apple
+xcrun devicectl device capture screenshot --device $DEVICE --destination /tmp/device.png
+xcrun devicectl device copy from --device $DEVICE --domain-type appDataContainer \
+  --domain-identifier dev.pockettalk.spike --source Documents/results --destination /tmp/device-results
 ```
 
 `swift test`가 iOS 전용 코드 때문에 안 되면 `xcodebuild test -scheme PocketTalkCore -destination "$DESTINATION"`으로 대체하고 그 사실을 이 파일에 기록한다.

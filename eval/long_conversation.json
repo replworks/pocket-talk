@@ -1,0 +1,109 @@
+[
+  {
+    "id": "long_34_turn",
+    "topic": "34턴 장기 대화 기억력",
+    "opening_prompt": "Hi! I'm Minsu. Nice to meet you. What's your name?",
+    "probes": [
+      {
+        "turn": 9,
+        "fact": "name",
+        "expect": [
+          "jina"
+        ],
+        "planted": 0
+      },
+      {
+        "turn": 11,
+        "fact": "city",
+        "expect": [
+          "busan"
+        ],
+        "planted": 0
+      },
+      {
+        "turn": 15,
+        "fact": "job",
+        "expect": [
+          "nurse"
+        ],
+        "planted": 1
+      },
+      {
+        "turn": 19,
+        "fact": "sister",
+        "expect": [
+          "mina"
+        ],
+        "planted": 2
+      },
+      {
+        "turn": 22,
+        "fact": "appointment",
+        "expect": [
+          "saturday"
+        ],
+        "planted": 5
+      },
+      {
+        "turn": 24,
+        "fact": "food",
+        "expect": [
+          "kimchi"
+        ],
+        "planted": 7
+      },
+      {
+        "turn": 27,
+        "fact": "dog",
+        "expect": [
+          "bori"
+        ],
+        "planted": 13
+      },
+      {
+        "turn": 29,
+        "fact": "study",
+        "expect": [
+          "hour"
+        ],
+        "planted": 18
+      }
+    ],
+    "user_turns": [
+      "Hello! My name is Jina. I am from Busan.",
+      "I work as a nurse at a hospital in Busan.",
+      "I have one sister. Her name is Mina.",
+      "She is a teacher and she lives in Daegu.",
+      "On weekends I usually meet my sister and eat lunch together.",
+      "I have an appointment with the dentist on Saturday at three.",
+      "I am a little nervous about it.",
+      "My favorite food is kimchi, especially with rice.",
+      "I also like cooking at home.",
+      "By the way, do you remember my name?",
+      "Yes! And I live near the sea, so I walk there often.",
+      "Which city do I live in again?",
+      "The weather there is windy but nice.",
+      "Last month I got a small dog. His name is Bori.",
+      "Bori is very small but he runs fast.",
+      "What is my job? I forgot if I told you.",
+      "I usually work at night, so I sleep in the morning.",
+      "That is why I study English in the evening.",
+      "I study English for one hour every evening.",
+      "What was my sister's name?",
+      "She wants to visit Busan next month.",
+      "We will go to the beach and eat seafood.",
+      "When is my appointment?",
+      "I need to buy a gift for my sister before that.",
+      "What food do I like?",
+      "Maybe I can cook it for her.",
+      "My dog Bori likes chicken, not vegetables.",
+      "What is my dog's name?",
+      "He is sleeping next to me now.",
+      "How long do I study English every evening?",
+      "It is tiring but I want to improve.",
+      "Sometimes I watch English dramas with subtitles.",
+      "Do you have any advice for me?",
+      "Thank you! I will try that. See you next time."
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+# 빌드 산출물
+.build/
+DerivedData/
+
+# Xcode 사용자 상태 (프로젝트 파일 자체는 xcodegen이 생성하므로 추적 가능)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS
+.DS_Store

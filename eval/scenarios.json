@@ -1,0 +1,222 @@
+[
+  {
+    "id": "sc01_self_intro",
+    "topic": "자기소개",
+    "opening_prompt": "Hi! I'm Minsu. Nice to meet you. What's your name?",
+    "user_turns": [
+      "Hello. My name is Jina. I am from Korea.",
+      "I am work at a small company in Seoul.",
+      "I like listen to music and watch movies.",
+      "Yes, I study English every day for my job."
+    ]
+  },
+  {
+    "id": "sc02_cafe_order",
+    "topic": "카페에서 주문하기",
+    "opening_prompt": "Hi there! What can I get for you today?",
+    "user_turns": [
+      "I want a large iced latte, please.",
+      "Can I get it with less sugar?",
+      "How much is it?",
+      "Okay. I pay by card."
+    ]
+  },
+  {
+    "id": "sc03_restaurant_order",
+    "topic": "식당에서 주문하기",
+    "opening_prompt": "Good evening! Welcome. Are you ready to order?",
+    "user_turns": [
+      "Yes, I want the chicken pasta please.",
+      "Is it very spicy?",
+      "Then I will take it. And one cola, please.",
+      "No, that's all. Thank you."
+    ]
+  },
+  {
+    "id": "sc04_directions",
+    "topic": "길 묻기",
+    "opening_prompt": "Hi! You look lost. Can I help you?",
+    "user_turns": [
+      "Yes, I look for the train station.",
+      "How long does it take on foot?",
+      "Is there a bus? I am tired.",
+      "Thank you very much. Have a nice day."
+    ]
+  },
+  {
+    "id": "sc05_making_appointment",
+    "topic": "약속 잡기",
+    "opening_prompt": "Hello, this is Green Dental Clinic. How can I help you?",
+    "user_turns": [
+      "Hi, I want to make an appointment.",
+      "Friday afternoon is good for me.",
+      "Can I come at three? I finish work at two.",
+      "My name is Jina Kim. My phone number is 010-1234-5678."
+    ]
+  },
+  {
+    "id": "sc06_hobbies",
+    "topic": "취미",
+    "opening_prompt": "So, what do you like to do in your free time?",
+    "user_turns": [
+      "I like hiking in the mountain near my home.",
+      "Last weekend I go to Bukhansan with my friend.",
+      "It was very hard but the view was amazing.",
+      "What do you do on weekends?"
+    ]
+  },
+  {
+    "id": "sc07_weather_weekend",
+    "topic": "날씨와 주말",
+    "opening_prompt": "It's so sunny today! Do you have plans for the weekend?",
+    "user_turns": [
+      "Not yet. Maybe I stay home and rest.",
+      "What is the weather like on Saturday?",
+      "Rainy? Then I will watch a movie at home.",
+      "Do you want to come? I can make popcorn."
+    ]
+  },
+  {
+    "id": "sc08_shopping",
+    "topic": "옷 쇼핑",
+    "opening_prompt": "Hello! Can I help you find something?",
+    "user_turns": [
+      "Yes, I am looking for a winter jacket.",
+      "Do you have this in a smaller size?",
+      "How much is it? It looks expensive.",
+      "Can I try it on?"
+    ]
+  },
+  {
+    "id": "sc09_travel_plan",
+    "topic": "여행 계획",
+    "opening_prompt": "Are you planning a trip somewhere?",
+    "user_turns": [
+      "Yes, I want to go to Jeju Island next month.",
+      "I will stay for three days with my sister.",
+      "What should I see in Jeju?",
+      "Thank you. I will book the hotel tonight."
+    ]
+  },
+  {
+    "id": "sc10_pharmacy",
+    "topic": "병원과 약국",
+    "opening_prompt": "Hi, how can I help you today?",
+    "user_turns": [
+      "I have a headache and a sore throat.",
+      "I started feeling bad yesterday night.",
+      "Can I take this medicine with coffee?",
+      "Okay, thank you. How many times a day?"
+    ]
+  },
+  {
+    "id": "sc11_phone_call",
+    "topic": "전화 통화",
+    "opening_prompt": "Hello? This is Minji speaking.",
+    "user_turns": [
+      "Hi Minji, it's Jina. Are you busy now?",
+      "I call to ask about the meeting tomorrow.",
+      "What time does it start?",
+      "Okay, I will be there at nine. See you."
+    ]
+  },
+  {
+    "id": "sc12_hotel_checkin",
+    "topic": "호텔 체크인",
+    "opening_prompt": "Good afternoon! Welcome to the Blue Ocean Hotel. Checking in?",
+    "user_turns": [
+      "Yes, I have a reservation for two nights.",
+      "It is under the name Kim Jina.",
+      "Can I have a room on a high floor?",
+      "What time is the breakfast?"
+    ]
+  },
+  {
+    "id": "sc13_public_transport",
+    "topic": "대중교통 이용",
+    "opening_prompt": "Excuse me, do you need help with the ticket machine?",
+    "user_turns": [
+      "Yes please. I want to go to City Hall.",
+      "Which line should I take?",
+      "How many stops is it?",
+      "Thank you. Where can I transfer?"
+    ]
+  },
+  {
+    "id": "sc14_work_smalltalk",
+    "topic": "직장 잡담",
+    "opening_prompt": "Morning! Did you have a good weekend?",
+    "user_turns": [
+      "Yes, I went to my friend's wedding.",
+      "The food was very good and I meet many people.",
+      "How about you? What did you do?",
+      "That sounds fun. Let's have lunch together today."
+    ]
+  },
+  {
+    "id": "sc15_movies_friends",
+    "topic": "친구와 영화 보기",
+    "opening_prompt": "Do you want to see a movie this Friday?",
+    "user_turns": [
+      "Sure. What movie do you want to see?",
+      "I like comedy movies. The action is too loud for me.",
+      "What time is the movie start?",
+      "Okay, let's meet at the theater at seven."
+    ]
+  },
+  {
+    "id": "sc16_food_delivery",
+    "topic": "음식 배달 주문",
+    "opening_prompt": "Thanks for calling Sunny Chicken. What would you like?",
+    "user_turns": [
+      "I want to order one fried chicken, please.",
+      "Do you have a spicy one?",
+      "Then the spicy one, please. And two cokes.",
+      "My address is 25 Maple Street, apartment 302."
+    ]
+  },
+  {
+    "id": "sc17_gym_exercise",
+    "topic": "운동과 헬스장",
+    "opening_prompt": "Hi! Is this your first time at our gym?",
+    "user_turns": [
+      "Yes, I want to start exercise this month.",
+      "I usually walk, but I want to be stronger.",
+      "Do you have a class in the evening?",
+      "How much is it for one month?"
+    ]
+  },
+  {
+    "id": "sc18_bank",
+    "topic": "은행 업무",
+    "opening_prompt": "Good morning. How can I help you?",
+    "user_turns": [
+      "I want to open a new bank account.",
+      "I need it for my salary.",
+      "Is there a monthly fee?",
+      "Okay. What documents do I need?"
+    ]
+  },
+  {
+    "id": "sc19_moving_apartment",
+    "topic": "이사와 집",
+    "opening_prompt": "So you're moving to a new apartment? Tell me about it.",
+    "user_turns": [
+      "Yes, I move next week to a bigger house.",
+      "The rent is cheaper and it is near the subway.",
+      "I need help to move my books.",
+      "Can you help me on Saturday?"
+    ]
+  },
+  {
+    "id": "sc20_birthday_party",
+    "topic": "생일 파티",
+    "opening_prompt": "Hey! Are you coming to Sara's birthday party?",
+    "user_turns": [
+      "Yes, I want to come. What time is it?",
+      "What should I bring? Maybe a cake?",
+      "Okay, I will buy a small gift for her.",
+      "I am excited. See you on Saturday!"
+    ]
+  }
+]
