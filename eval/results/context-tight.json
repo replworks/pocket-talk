@@ -1,0 +1,373 @@
+[
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+
+    ],
+    "foldedTurnCount" : 0,
+    "summary" : "",
+    "summaryCharacters" : 0,
+    "turn" : 0
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+
+    ],
+    "foldedTurnCount" : 0,
+    "summary" : "",
+    "summaryCharacters" : 0,
+    "turn" : 1
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+
+    ],
+    "foldedTurnCount" : 0,
+    "summary" : "",
+    "summaryCharacters" : 0,
+    "turn" : 2
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+
+    ],
+    "foldedTurnCount" : 0,
+    "summary" : "",
+    "summaryCharacters" : 0,
+    "turn" : 3
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+
+    ],
+    "foldedTurnCount" : 1,
+    "summary" : "AI: Hi! I'm Minsu. Nice to meet you. What's your name?",
+    "summaryCharacters" : 54,
+    "turn" : 4
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan"
+    ],
+    "foldedTurnCount" : 3,
+    "summary" : "AI: Hi! I'm Minsu. Nice to meet you. What's your name? | Learner: Hello! My name is Jina. I am from Busan. | AI: Hello, Jina! Nice to meet you. What is your favorite food?",
+    "summaryCharacters" : 171,
+    "turn" : 5
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan",
+      "nurse"
+    ],
+    "foldedTurnCount" : 5,
+    "summary" : "AI: Hi! I'm Minsu. Nice to meet you. What's your name? | Learner: Hello! My name is Jina. I am from Busan. | AI: Hello, Jina! Nice to meet you. What is your favorite food? | Learner: I work as a nurse at a hospital in Busan. | AI: Wow, Jina! That is cool. What do you like to do in your free",
+    "summaryCharacters" : 291,
+    "turn" : 6
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan",
+      "nurse",
+      "mina"
+    ],
+    "foldedTurnCount" : 7,
+    "summary" : "! I'm Minsu. Nice to meet you. What's your name? | Learner: Hello! My name is Jina. I am from Busan. | AI: Hello, Jina! Nice to meet you. What is your favorite food? | Learner: I work as a nurse at a hospital in Busan. | AI: Wow, Jina! That is cool. What do you like to do in your free | Learner: I have one sister. Her name is Mina. | AI: Hi, Jina! Your sister is Mina. Do you like to spend time wit",
+    "summaryCharacters" : 400,
+    "turn" : 7
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan",
+      "nurse",
+      "mina"
+    ],
+    "foldedTurnCount" : 9,
+    "summary" : " Nice to meet you. What is your favorite food? | Learner: I work as a nurse at a hospital in Busan. | AI: Wow, Jina! That is cool. What do you like to do in your free | Learner: I have one sister. Her name is Mina. | AI: Hi, Jina! Your sister is Mina. Do you like to spend time wit | Learner: She is a teacher and she lives in Daegu. | AI: Hi, Jina! Your sister lives in Daegu. What is your favorite ",
+    "summaryCharacters" : 400,
+    "turn" : 8
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "mina"
+    ],
+    "foldedTurnCount" : 11,
+    "summary" : "you like to do in your free | Learner: I have one sister. Her name is Mina. | AI: Hi, Jina! Your sister is Mina. Do you like to spend time wit | Learner: She is a teacher and she lives in Daegu. | AI: Hi, Jina! Your sister lives in Daegu. What is your favorite  | Learner: On weekends I usually meet my sister and eat lunch together. | AI: Nice, Jina! You have fun with your sister. What do you usual",
+    "summaryCharacters" : 400,
+    "turn" : 9
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "saturday"
+    ],
+    "foldedTurnCount" : 13,
+    "summary" : "wit | Learner: She is a teacher and she lives in Daegu. | AI: Hi, Jina! Your sister lives in Daegu. What is your favorite  | Learner: On weekends I usually meet my sister and eat lunch together. | AI: Nice, Jina! You have fun with your sister. What do you usual | Learner: I have an appointment with the dentist on Saturday at three. | AI: Oh, Jina! You have a dentist appointment. Do you feel nervou",
+    "summaryCharacters" : 400,
+    "turn" : 10
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "saturday"
+    ],
+    "foldedTurnCount" : 15,
+    "summary" : "ur favorite  | Learner: On weekends I usually meet my sister and eat lunch together. | AI: Nice, Jina! You have fun with your sister. What do you usual | Learner: I have an appointment with the dentist on Saturday at three. | AI: Oh, Jina! You have a dentist appointment. Do you feel nervou | Learner: I am a little nervous about it. | AI: It is okay, Jina. You can talk to your sister. Do you want t",
+    "summaryCharacters" : 400,
+    "turn" : 11
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "saturday",
+      "kimchi"
+    ],
+    "foldedTurnCount" : 17,
+    "summary" : "ster. What do you usual | Learner: I have an appointment with the dentist on Saturday at three. | AI: Oh, Jina! You have a dentist appointment. Do you feel nervou | Learner: I am a little nervous about it. | AI: It is okay, Jina. You can talk to your sister. Do you want t | Learner: My favorite food is kimchi, especially with rice. | AI: Kimchi with rice is good, Jina! That sounds tasty. Do you li",
+    "summaryCharacters" : 400,
+    "turn" : 12
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "kimchi"
+    ],
+    "foldedTurnCount" : 19,
+    "summary" : "ina! You have a dentist appointment. Do you feel nervou | Learner: I am a little nervous about it. | AI: It is okay, Jina. You can talk to your sister. Do you want t | Learner: My favorite food is kimchi, especially with rice. | AI: Kimchi with rice is good, Jina! That sounds tasty. Do you li | Learner: I also like cooking at home. | AI: That is nice, Jina! Cooking at home is fun. Do you like to m",
+    "summaryCharacters" : 400,
+    "turn" : 13
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "kimchi"
+    ],
+    "foldedTurnCount" : 21,
+    "summary" : ", Jina. You can talk to your sister. Do you want t | Learner: My favorite food is kimchi, especially with rice. | AI: Kimchi with rice is good, Jina! That sounds tasty. Do you li | Learner: I also like cooking at home. | AI: That is nice, Jina! Cooking at home is fun. Do you like to m | Learner: By the way, do you remember my name? | AI: I remember your name, Jina. It is nice to talk to you. What ",
+    "summaryCharacters" : 400,
+    "turn" : 14
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 23,
+    "summary" : "ice is good, Jina! That sounds tasty. Do you li | Learner: I also like cooking at home. | AI: That is nice, Jina! Cooking at home is fun. Do you like to m | Learner: By the way, do you remember my name? | AI: I remember your name, Jina. It is nice to talk to you. What  | Learner: Yes! And I live near the sea, so I walk there often. | AI: That is nice, Jina! Walking near the sea is fun. Do you like",
+    "summaryCharacters" : 400,
+    "turn" : 15
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 25,
+    "summary" : "ina! Cooking at home is fun. Do you like to m | Learner: By the way, do you remember my name? | AI: I remember your name, Jina. It is nice to talk to you. What  | Learner: Yes! And I live near the sea, so I walk there often. | AI: That is nice, Jina! Walking near the sea is fun. Do you like | Learner: Which city do I live in again? | AI: You live near the sea, Jina. I don't know the exact city. Wh",
+    "summaryCharacters" : 400,
+    "turn" : 16
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 27,
+    "summary" : " name, Jina. It is nice to talk to you. What  | Learner: Yes! And I live near the sea, so I walk there often. | AI: That is nice, Jina! Walking near the sea is fun. Do you like | Learner: Which city do I live in again? | AI: You live near the sea, Jina. I don't know the exact city. Wh | Learner: The weather there is windy but nice. | AI: Windy weather can be fun, Jina! It is nice to walk outside. ",
+    "summaryCharacters" : 400,
+    "turn" : 17
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 29,
+    "summary" : "ce, Jina! Walking near the sea is fun. Do you like | Learner: Which city do I live in again? | AI: You live near the sea, Jina. I don't know the exact city. Wh | Learner: The weather there is windy but nice. | AI: Windy weather can be fun, Jina! It is nice to walk outside.  | Learner: Last month I got a small dog. His name is Bori. | AI: That is nice, Jina! A small dog can be fun. Does Bori like t",
+    "summaryCharacters" : 400,
+    "turn" : 18
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 31,
+    "summary" : "e sea, Jina. I don't know the exact city. Wh | Learner: The weather there is windy but nice. | AI: Windy weather can be fun, Jina! It is nice to walk outside.  | Learner: Last month I got a small dog. His name is Bori. | AI: That is nice, Jina! A small dog can be fun. Does Bori like t | Learner: Bori is very small but he runs fast. | AI: That is amazing, Jina! Small dogs can run fast. Do you feel ",
+    "summaryCharacters" : 400,
+    "turn" : 19
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 33,
+    "summary" : "e fun, Jina! It is nice to walk outside.  | Learner: Last month I got a small dog. His name is Bori. | AI: That is nice, Jina! A small dog can be fun. Does Bori like t | Learner: Bori is very small but he runs fast. | AI: That is amazing, Jina! Small dogs can run fast. Do you feel  | Learner: What is my job? I forgot if I told you. | AI: I don't know your job, Jina. It is okay to forget. What do y",
+    "summaryCharacters" : 400,
+    "turn" : 20
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 35,
+    "summary" : "mall dog can be fun. Does Bori like t | Learner: Bori is very small but he runs fast. | AI: That is amazing, Jina! Small dogs can run fast. Do you feel  | Learner: What is my job? I forgot if I told you. | AI: I don't know your job, Jina. It is okay to forget. What do y | Learner: I usually work at night, so I sleep in the morning. | AI: That is interesting, Jina! Working at night can be hard. Do ",
+    "summaryCharacters" : 400,
+    "turn" : 21
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 37,
+    "summary" : "ogs can run fast. Do you feel  | Learner: What is my job? I forgot if I told you. | AI: I don't know your job, Jina. It is okay to forget. What do y | Learner: I usually work at night, so I sleep in the morning. | AI: That is interesting, Jina! Working at night can be hard. Do  | Learner: That is why I study English in the evening. | AI: That is good, Jina! Studying English at night is helpful. Do",
+    "summaryCharacters" : 400,
+    "turn" : 22
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "hour"
+    ],
+    "foldedTurnCount" : 39,
+    "summary" : " okay to forget. What do y | Learner: I usually work at night, so I sleep in the morning. | AI: That is interesting, Jina! Working at night can be hard. Do  | Learner: That is why I study English in the evening. | AI: That is good, Jina! Studying English at night is helpful. Do | Learner: I study English for one hour every evening. | AI: One hour every evening is nice, Jina! You are doing well. Do",
+    "summaryCharacters" : 400,
+    "turn" : 23
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "hour"
+    ],
+    "foldedTurnCount" : 41,
+    "summary" : "nteresting, Jina! Working at night can be hard. Do  | Learner: That is why I study English in the evening. | AI: That is good, Jina! Studying English at night is helpful. Do | Learner: I study English for one hour every evening. | AI: One hour every evening is nice, Jina! You are doing well. Do | Learner: What was my sister's name? | AI: I don't know your sister's name, Jina. It is okay to forget.",
+    "summaryCharacters" : 400,
+    "turn" : 24
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan",
+      "hour"
+    ],
+    "foldedTurnCount" : 43,
+    "summary" : "at is good, Jina! Studying English at night is helpful. Do | Learner: I study English for one hour every evening. | AI: One hour every evening is nice, Jina! You are doing well. Do | Learner: What was my sister's name? | AI: I don't know your sister's name, Jina. It is okay to forget. | Learner: She wants to visit Busan next month. | AI: That sounds fun, Jina! Busan is a nice place. Do you like go",
+    "summaryCharacters" : 400,
+    "turn" : 25
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan",
+      "hour"
+    ],
+    "foldedTurnCount" : 45,
+    "summary" : " One hour every evening is nice, Jina! You are doing well. Do | Learner: What was my sister's name? | AI: I don't know your sister's name, Jina. It is okay to forget. | Learner: She wants to visit Busan next month. | AI: That sounds fun, Jina! Busan is a nice place. Do you like go | Learner: We will go to the beach and eat seafood. | AI: That sounds good, Jina! The beach and seafood are nice. Do y",
+    "summaryCharacters" : 400,
+    "turn" : 26
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan"
+    ],
+    "foldedTurnCount" : 47,
+    "summary" : "AI: I don't know your sister's name, Jina. It is okay to forget. | Learner: She wants to visit Busan next month. | AI: That sounds fun, Jina! Busan is a nice place. Do you like go | Learner: We will go to the beach and eat seafood. | AI: That sounds good, Jina! The beach and seafood are nice. Do y | Learner: When is my appointment? | AI: I don't know your appointment time, Jina. It is okay to forg",
+    "summaryCharacters" : 400,
+    "turn" : 27
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "busan"
+    ],
+    "foldedTurnCount" : 49,
+    "summary" : "unds fun, Jina! Busan is a nice place. Do you like go | Learner: We will go to the beach and eat seafood. | AI: That sounds good, Jina! The beach and seafood are nice. Do y | Learner: When is my appointment? | AI: I don't know your appointment time, Jina. It is okay to forg | Learner: I need to buy a gift for my sister before that. | AI: That is a good idea, Jina! A gift can be nice. What kind of ",
+    "summaryCharacters" : 400,
+    "turn" : 28
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 51,
+    "summary" : "afood. | AI: That sounds good, Jina! The beach and seafood are nice. Do y | Learner: When is my appointment? | AI: I don't know your appointment time, Jina. It is okay to forg | Learner: I need to buy a gift for my sister before that. | AI: That is a good idea, Jina! A gift can be nice. What kind of  | Learner: What food do I like? | AI: I don't know your favorite food, Jina. You can think about w",
+    "summaryCharacters" : 400,
+    "turn" : 29
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina"
+    ],
+    "foldedTurnCount" : 53,
+    "summary" : "? | AI: I don't know your appointment time, Jina. It is okay to forg | Learner: I need to buy a gift for my sister before that. | AI: That is a good idea, Jina! A gift can be nice. What kind of  | Learner: What food do I like? | AI: I don't know your favorite food, Jina. You can think about w | Learner: Maybe I can cook it for her. | AI: Cooking for your sister is nice, Jina! It can be very specia",
+    "summaryCharacters" : 400,
+    "turn" : 30
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 55,
+    "summary" : " that. | AI: That is a good idea, Jina! A gift can be nice. What kind of  | Learner: What food do I like? | AI: I don't know your favorite food, Jina. You can think about w | Learner: Maybe I can cook it for her. | AI: Cooking for your sister is nice, Jina! It can be very specia | Learner: My dog Bori likes chicken, not vegetables. | AI: That is interesting, Jina! Bori likes chicken, not vegetable",
+    "summaryCharacters" : 400,
+    "turn" : 31
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 57,
+    "summary" : "ike? | AI: I don't know your favorite food, Jina. You can think about w | Learner: Maybe I can cook it for her. | AI: Cooking for your sister is nice, Jina! It can be very specia | Learner: My dog Bori likes chicken, not vegetables. | AI: That is interesting, Jina! Bori likes chicken, not vegetable | Learner: What is my dog's name? | AI: I don't know your dog's name, Jina. We can talk about Bori i",
+    "summaryCharacters" : 400,
+    "turn" : 32
+  },
+  {
+    "droppedTurnCount" : 0,
+    "factsInSummary" : [
+      "jina",
+      "bori"
+    ],
+    "foldedTurnCount" : 59,
+    "summary" : "r. | AI: Cooking for your sister is nice, Jina! It can be very specia | Learner: My dog Bori likes chicken, not vegetables. | AI: That is interesting, Jina! Bori likes chicken, not vegetable | Learner: What is my dog's name? | AI: I don't know your dog's name, Jina. We can talk about Bori i | Learner: He is sleeping next to me now. | AI: Bori is sleeping near you, Jina. He looks cozy. What does Bo",
+    "summaryCharacters" : 400,
+    "turn" : 33
+  }
+]

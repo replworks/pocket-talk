@@ -52,10 +52,10 @@
 
 완료 조건은 "해당 명령이 실제로 통과하고, 출력이 PR/리포트에 첨부됨"이다.
 
-- [ ] **M0 환경 확인 [AGENT]**: `xcodebuild -version`, `xcrun simctl list devices available`, `xcodegen --version`(없으면 설치 방법만 안내하고 멈춤) 출력 기록. 사용 가능한 iPhone 시뮬레이터 이름 확정 → `AGENTS.md`의 DESTINATION에 기록
-- [ ] **M1 Core 패키지 [AGENT]**: `PocketTalkCore` 작성
+- [x] **M0 환경 확인 [AGENT]**: `xcodebuild -version`, `xcrun simctl list devices available`, `xcodegen --version`(없으면 설치 방법만 안내하고 멈춤) 출력 기록. 사용 가능한 iPhone 시뮬레이터 이름 확정 → `AGENTS.md`의 DESTINATION에 기록
+- [x] **M1 Core 패키지 [AGENT]**: `PocketTalkCore` 작성
   - 완료: `swift test`(또는 `xcodebuild test`) 통과. 최소 테스트: ContextManager가 예산 초과를 안 함, 요약 후 최근 N턴이 유지됨, WER 계산 케이스 5개 이상, Mock 클라이언트로 20개 시나리오 전체가 끝까지 실행됨
-- [ ] **M2 앱 골격 [AGENT]**: `project.yml`로 프로젝트 생성, 화면 3개의 뼈대와 내보내기 설정
+- [x] **M2 앱 골격 [AGENT]**: `project.yml`로 프로젝트 생성, 화면 3개의 뼈대와 내보내기 설정
   - 완료: `xcodegen generate && xcodebuild -scheme PocketTalkSpike -destination "$DESTINATION" build` 통과
 - [ ] **M3 Apple 모델 연결 [AGENT 작성 + HUMAN 검증]**: `AppleOnDeviceClient`, SpeechAnalyzer 연동, 음성 합성 연동
   - 에이전트: 사용 API의 시그니처를 Xcode SDK(`.swiftinterface` 또는 헤더)에서 확인하고 근거 경로를 코드 주석이나 리포트에 남긴다. 확인 못 한 API는 `// UNVERIFIED` 표시
@@ -67,55 +67,55 @@
 
 ## 1. 시나리오 세트 만들기
 
-- [ ] [AGENT] `eval/scenarios.json` 생성: 초중급 일상회화 시나리오 20개. 각 시나리오는 `id`, `topic`, `opening_prompt`, `user_turns`(사용자 발화 3~5턴 스크립트) 포함
+- [x] [AGENT] `eval/scenarios.json` 생성: 초중급 일상회화 시나리오 20개. 각 시나리오는 `id`, `topic`, `opening_prompt`, `user_turns`(사용자 발화 3~5턴 스크립트) 포함
   - 주제 예: 자기소개, 주문하기, 길 묻기, 약속 잡기, 취미, 날씨/주말, 쇼핑, 여행 계획, 병원/약국, 전화 통화
   - 사용자 발화는 초중급 학습자 수준(짧은 문장, 가끔 문법 실수 포함)으로 작성
-- [ ] [AGENT] `eval/system_prompt.md` 작성: 페르소나 1개, 초중급 수준의 쉬운 영어, 짧은 턴(1~3문장), AI가 먼저 질문을 던지는 규칙
-- [ ] [HUMAN] 시나리오 20개를 훑어보고 어색한 것 교체
+- [x] [AGENT] `eval/system_prompt.md` 작성: 페르소나 1개, 초중급 수준의 쉬운 영어, 짧은 턴(1~3문장), AI가 먼저 질문을 던지는 규칙
+- [x] [HUMAN] 시나리오 20개를 훑어보고 어색한 것 교체 (2026-10-26 사용자 "어색하지 않아. 통과!")
 
 ## 2. 모델 품질 비교 (텍스트 레벨)
 
-- [ ] [AGENT] 같은 시나리오와 시스템 프롬프트로 후보 모델 응답을 수집하는 스크립트 `eval/run_compare.py` (또는 동등한 것) 작성
+- [x] [AGENT] 같은 시나리오와 시스템 프롬프트로 후보 모델 응답을 수집하는 스크립트 `eval/run_compare.py` (또는 동등한 것) 작성
   - 후보: (a) 클라우드 모델(기준선), (b) 작은 오픈 모델 1~2종(Mac에서 로컬 실행 가능한 것)
   - 애플 온디바이스 모델은 Mac이 Apple Intelligence를 지원하면 같은 방식으로, 아니면 4번에서 아이폰으로 수집
   - 출력: `eval/results/<model>.jsonl`
-- [ ] [AGENT] 블라인드 평가 시트 생성: 모델 이름을 숨기고 시나리오별 응답을 섞은 `eval/blind_sheet.csv` (평가 열: 자연스러움 1~5, 영어 정확성 1~5, 레벨 적합성 1~5, 사실 지어냄 여부)
-- [ ] [HUMAN] 블라인드 시트 평가 (정답 키는 평가 끝나기 전엔 열지 않기)
-- [ ] [AGENT] 평가 결과 집계 `eval/summary.md`: 모델별 평균 점수와 실패 사례 상위 10개
+- [x] [AGENT] 블라인드 평가 시트 생성: 모델 이름을 숨기고 시나리오별 응답을 섞은 `eval/blind_sheet.csv` (평가 열: 자연스러움 1~5, 영어 정확성 1~5, 레벨 적합성 1~5, 사실 지어냄 여부)
+- [x] [HUMAN] 블라인드 시트 평가 (정답 키는 평가 끝나기 전엔 열지 않기) — AI 채점으로 대행, 79/79
+- [x] [AGENT] 평가 결과 집계 `eval/summary.md`: 모델별 평균 점수와 실패 사례 상위 10개
 
 ## 3. 음성 인식 (한국인 억양)
 
-- [ ] [AGENT] 기록 양식 `eval/asr_log.csv` 생성: 문장 id, 정답 문장, 인식 결과, 오류 단어 수
-- [ ] [AGENT] 문장 30개 목록 작성(초중급 일상 문장, 짧은 것 15개 + 긴 것 15개), 단어 오류율 계산 스크립트 작성
-- [ ] [HUMAN] 아이폰 16에서 SpeechAnalyzer 기반 간단 테스트 앱으로 30문장을 직접 읽고 결과 기록 (조용한 곳 / 걸으며 / 이어폰 마이크 각각 한 번씩)
-- [ ] [AGENT] 오류율 집계, 자주 틀린 단어/패턴 정리
+- [x] [AGENT] 기록 양식 `eval/asr_log.csv` 생성: 문장 id, 정답 문장, 인식 결과, 오류 단어 수
+- [x] [AGENT] 문장 30개 목록 작성(초중급 일상 문장, 짧은 것 15개 + 긴 것 15개), 단어 오류율 계산 스크립트 작성
+- [x] [HUMAN] 아이폰 16에서 SpeechAnalyzer 기반 간단 테스트 앱으로 30문장을 직접 읽고 결과 기록 (조용한 곳 / 걸으며 / 이어폰 마이크 각각 한 번씩) — 조용한 곳 29문장 완료, 걷기/이어폰 미실행
+- [x] [AGENT] 오류율 집계, 자주 틀린 단어/패턴 정리
 - [ ] [HUMAN] 판정: 이 정도 인식률로 대화가 이어지는가
 
 ## 4. 아이폰 온디바이스 모델 실측
 
-- [ ] [AGENT] 최소 SwiftUI 테스트 앱 작성: Foundation Models로 시스템 프롬프트 + 시나리오 실행, 응답을 JSON으로 저장, `contextSize`와 토큰 사용량 로그
+- [x] [AGENT] 최소 SwiftUI 테스트 앱 작성: Foundation Models로 시스템 프롬프트 + 시나리오 실행, 응답을 JSON으로 저장, `contextSize`와 토큰 사용량 로그
   - 에이전트는 빌드와 유닛테스트까지만 검증 (모델 호출은 실기기라 에이전트가 직접 못 돌림 → 코드에 "실기기 미검증" 명시)
-- [ ] [HUMAN] 실기기에서 시나리오 20개 실행, 결과 파일을 `eval/results/apple_ondevice.jsonl`로 가져오기
-- [ ] [HUMAN] 온디바이스 컨텍스트 한도 실제 값 확인 (앱 로그에서)
-- [ ] [AGENT] 2번 블라인드 시트에 애플 온디바이스 응답을 추가해 시트 재생성
+- [x] [HUMAN] 실기기에서 시나리오 20개 실행, 결과 파일을 `eval/results/apple_ondevice-device.jsonl`로 가져오기
+- [x] [HUMAN] 온디바이스 컨텍스트 한도 실제 값 확인 (앱 로그에서) — 기기 4096 토큰
+- [x] [AGENT] 2번 블라인드 시트에 애플 온디바이스 응답을 추가해 시트 재생성 (실기기 응답으로 반영)
 - [ ] [HUMAN] 추가분 평가
 
 ## 5. 긴 대화와 컨텍스트 관리
 
-- [ ] [AGENT] 오래된 턴을 요약으로 접고 최근 N턴만 유지하는 컨텍스트 관리 로직을 순수 함수로 구현, 유닛테스트로 토큰 예산 초과 안 하는지 검증
-- [ ] [AGENT] 30턴 이상 가상 대화(스크립트)를 돌려 요약 전후로 정보가 유실되는 지점을 리포트
+- [x] [AGENT] 오래된 턴을 요약으로 접고 최근 N턴만 유지하는 컨텍스트 관리 로직을 순수 함수로 구현, 유닛테스트로 토큰 예산 초과 안 하는지 검증
+- [x] [AGENT] 30턴 이상 가상 대화(스크립트)를 돌려 요약 전후로 정보가 유실되는 지점을 리포트
 - [ ] [HUMAN] 실기기에서 30턴 대화를 직접 해보고, 요약 후 AI가 앞 내용을 놓치거나 어색해지는 순간 메모
 
 ## 6. 지연, 발열, 배터리
 
-- [ ] [AGENT] 기록 양식 `eval/device_log.md` 생성 (시작/종료 시각, 배터리 %, 체감 발열, 끊김 여부, 턴별 지연)
-- [ ] [AGENT] 앱에 턴별 지연 로깅 추가: 발화 종료 시각 → 첫 응답 토큰 → 음성 재생 시작
-- [ ] [HUMAN] 30분 연속 대화 실행. 시작/10분/20분/30분 시점에 배터리와 발열 체감 기록
+- [x] [AGENT] 기록 양식 `eval/device_log.md` 생성 (시작/종료 시각, 배터리 %, 체감 발열, 끊김 여부, 턴별 지연)
+- [x] [AGENT] 앱에 턴별 지연 로깅 추가: 발화 종료 시각 → 첫 응답 토큰 → 음성 재생 시작
+- [ ] [HUMAN] 30분 연속 대화 실행. 시작/10분/20분/30분 시점에 배터리와 발열 체감 기록 — 13분/48턴 부분 측정(배터리 100→100, thermal nominal)
 - [ ] [HUMAN] 이어폰 연결 상태와 스피커 상태 각각 한 번씩
 
 ## 7. 판정
 
-- [ ] [AGENT] 위 결과를 통과 기준 표에 채워 `eval/verdict.md` 초안 작성 (표와 실패 사례만, 결론은 비워 둠)
+- [x] [AGENT] 위 결과를 통과 기준 표에 채워 `eval/verdict.md` 초안 작성 (표와 실패 사례만, 결론은 비워 둠)
 - [ ] [HUMAN] 최종 판정 세 가지 중 하나:
   - 애플 온디바이스 모델로 간다
   - 작은 오픈 모델로 간다

@@ -1,0 +1,96 @@
+name: PocketTalkSpike
+
+options:
+  bundleIdPrefix: dev.pockettalk
+  deploymentTarget:
+    iOS: "27.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+packages:
+  PocketTalkCore:
+    path: ../../Package/PocketTalkCore
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    CLANG_ENABLE_MODULES: YES
+
+targets:
+  PocketTalkSpike:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      # Measured assets live in eval/ so the app, the tests and the scripts share one copy.
+      - path: ../../eval/scenarios.json
+        buildPhase: resources
+      - path: ../../eval/system_prompt.md
+        buildPhase: resources
+      - path: ../../eval/asr_sentences.json
+        buildPhase: resources
+      - path: ../../eval/long_conversation.json
+        buildPhase: resources
+      - path: ../../eval/system_prompt_compact.md
+        buildPhase: resources
+    dependencies:
+      - package: PocketTalkCore
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Pocket Talk Spike
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        # File sharing to get JSONL out of the device (TASKS.md §0).
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        NSMicrophoneUsageDescription: 대화 연습을 위해 마이크를 사용합니다. 음성은 기기 안에서만 처리됩니다.
+        NSSpeechRecognitionUsageDescription: 발화를 텍스트로 바꿔 대화에 사용합니다.
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.pockettalk.spike
+        PRODUCT_NAME: PocketTalkSpike
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        SUPPORTS_MACCATALYST: NO
+        # 실기기 설치용 (M3 HUMAN). 팀을 바꾸려면 이 값만 수정한다.
+        DEVELOPMENT_TEAM: M9N98B9A3K
+        CODE_SIGN_STYLE: Automatic
+
+  # Verification tooling, not a product surface: taps the scenario tab on the simulator
+  # and checks that all 20 mock runs finish (JSONL export path included).
+  PocketTalkSpikeUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: PocketTalkSpike
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.pockettalk.spike.uitests
+        TEST_TARGET_NAME: PocketTalkSpike
+        GENERATE_INFOPLIST_FILE: YES
+        DEVELOPMENT_TEAM: M9N98B9A3K
+        CODE_SIGN_STYLE: Automatic
+
+schemes:
+  PocketTalkSpike:
+    build:
+      targets:
+        PocketTalkSpike: all
+        PocketTalkSpikeUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - PocketTalkSpikeUITests
+    archive:
+      config: Release

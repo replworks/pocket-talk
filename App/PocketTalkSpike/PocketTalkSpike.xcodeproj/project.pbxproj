@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038F886AAAF0A78639ECB297 /* scenarios.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7A53825AAD749DA20AF317 /* scenarios.json */; };
+		14793E64C5C018ABA636624F /* ScenarioRunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F2FD8BE14F3810FCFE3EFA /* ScenarioRunnerUITests.swift */; };
+		2AD5EE311FB4EA39159EB1A4 /* ASRSentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF50450AA765949753DF0A /* ASRSentences.swift */; };
+		35B7C53A208EB86AA7CAC4AB /* system_prompt_compact.md in Resources */ = {isa = PBXBuildFile; fileRef = BDB9456A741E82532B15F582 /* system_prompt_compact.md */; };
+		366D8242D3907E65569F8915 /* AudioSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83017AE51B671D8AFCCAD828 /* AudioSessionController.swift */; };
+		430C1B126F5204B36A5C536D /* ASRTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C356F2E225670F24A5340D /* ASRTestView.swift */; };
+		4903E1704E32F88BFC0F4B6F /* PocketTalkCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7798366B7905B855F26C61 /* PocketTalkCore */; };
+		558EDE099AB7C45A77CD3D95 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F6738A69E226E5B7A2DF1F /* SpeechRecognizer.swift */; };
+		5B08290ECA6060B79E73AEC3 /* asr_sentences.json in Resources */ = {isa = PBXBuildFile; fileRef = 72F0724B8647B13CD9C68443 /* asr_sentences.json */; };
+		788084C6D09723C3E54EF7D2 /* DeviceMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73816F6B3729BF3E6FCFC600 /* DeviceMetrics.swift */; };
+		7882E766AD99700CFDC20D68 /* MeasurementStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A159AD5432BDD3971768C67 /* MeasurementStore.swift */; };
+		7C75AD0A5C0F87DD585457CA /* ScenarioRunnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351E13C7ED1086D711D7D8E /* ScenarioRunnerView.swift */; };
+		9241FF35992E36D92BFB548E /* CacheExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394494B6B4261A7390C06789 /* CacheExperiment.swift */; };
+		9994BF95B435A42A1DB9A7F0 /* long_conversation.json in Resources */ = {isa = PBXBuildFile; fileRef = C944E7ED8B22820F225A4CAF /* long_conversation.json */; };
+		AA8D350839F0353A8C775511 /* SpeechSynthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D178970438385C69ED88F2B /* SpeechSynthesis.swift */; };
+		CF0D11EC02B03351CFAFD6A7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFA12E099980AC88A1E762 /* RootView.swift */; };
+		D58364DEE6C6DAEAC4F3C063 /* system_prompt.md in Resources */ = {isa = PBXBuildFile; fileRef = 132B24FF3DB7DE6C0A7A36DD /* system_prompt.md */; };
+		EAEDA20D9BB8DC6C643FFBA5 /* LiveSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2044A8A340F2606B60B73130 /* LiveSessionView.swift */; };
+		FFEFB2A2115E6311EA4921E5 /* PocketTalkSpikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E7A2E5572513EA7451F89 /* PocketTalkSpikeApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE140C2850D36AE8C6B0E608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B35FDC7CC7400C5C1E22105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F8EBB60664E4CB694E9866;
+			remoteInfo = PocketTalkSpike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F6738A69E226E5B7A2DF1F /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		132B24FF3DB7DE6C0A7A36DD /* system_prompt.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = system_prompt.md; sourceTree = "<group>"; };
+		1D178970438385C69ED88F2B /* SpeechSynthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesis.swift; sourceTree = "<group>"; };
+		2044A8A340F2606B60B73130 /* LiveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSessionView.swift; sourceTree = "<group>"; };
+		27BFA12E099980AC88A1E762 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		35F2FD8BE14F3810FCFE3EFA /* ScenarioRunnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioRunnerUITests.swift; sourceTree = "<group>"; };
+		394494B6B4261A7390C06789 /* CacheExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheExperiment.swift; sourceTree = "<group>"; };
+		39C356F2E225670F24A5340D /* ASRTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASRTestView.swift; sourceTree = "<group>"; };
+		3EC4802297D6CA36725E4089 /* PocketTalkCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PocketTalkCore; path = ../../Package/PocketTalkCore; sourceTree = SOURCE_ROOT; };
+		4351E13C7ED1086D711D7D8E /* ScenarioRunnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioRunnerView.swift; sourceTree = "<group>"; };
+		46CF50450AA765949753DF0A /* ASRSentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASRSentences.swift; sourceTree = "<group>"; };
+		72F0724B8647B13CD9C68443 /* asr_sentences.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = asr_sentences.json; sourceTree = "<group>"; };
+		73816F6B3729BF3E6FCFC600 /* DeviceMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMetrics.swift; sourceTree = "<group>"; };
+		7A159AD5432BDD3971768C67 /* MeasurementStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementStore.swift; sourceTree = "<group>"; };
+		7B7A53825AAD749DA20AF317 /* scenarios.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scenarios.json; sourceTree = "<group>"; };
+		83017AE51B671D8AFCCAD828 /* AudioSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionController.swift; sourceTree = "<group>"; };
+		9E3FFDBC1F1DC341617A5A52 /* PocketTalkSpikeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PocketTalkSpikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3C651D34199D464128D982 /* PocketTalkSpike.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PocketTalkSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08E7A2E5572513EA7451F89 /* PocketTalkSpikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTalkSpikeApp.swift; sourceTree = "<group>"; };
+		BDB9456A741E82532B15F582 /* system_prompt_compact.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = system_prompt_compact.md; sourceTree = "<group>"; };
+		C944E7ED8B22820F225A4CAF /* long_conversation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = long_conversation.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0F91169001AC1440FB149FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4903E1704E32F88BFC0F4B6F /* PocketTalkCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37F61A5EBB1C1B5A4E5E1A4E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				3EC4802297D6CA36725E4089 /* PocketTalkCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		3A54AC3321968D6A2B5C85BE /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				35F2FD8BE14F3810FCFE3EFA /* ScenarioRunnerUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		48AC050AA9CF80837B5100FC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				46CF50450AA765949753DF0A /* ASRSentences.swift */,
+				39C356F2E225670F24A5340D /* ASRTestView.swift */,
+				83017AE51B671D8AFCCAD828 /* AudioSessionController.swift */,
+				394494B6B4261A7390C06789 /* CacheExperiment.swift */,
+				73816F6B3729BF3E6FCFC600 /* DeviceMetrics.swift */,
+				2044A8A340F2606B60B73130 /* LiveSessionView.swift */,
+				7A159AD5432BDD3971768C67 /* MeasurementStore.swift */,
+				B08E7A2E5572513EA7451F89 /* PocketTalkSpikeApp.swift */,
+				27BFA12E099980AC88A1E762 /* RootView.swift */,
+				4351E13C7ED1086D711D7D8E /* ScenarioRunnerView.swift */,
+				09F6738A69E226E5B7A2DF1F /* SpeechRecognizer.swift */,
+				1D178970438385C69ED88F2B /* SpeechSynthesis.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		53DA079FF88859104DB96724 = {
+			isa = PBXGroup;
+			children = (
+				37F61A5EBB1C1B5A4E5E1A4E /* Packages */,
+				EB2AEE9C922628BC51EDFB0A /* pocket-talk */,
+				48AC050AA9CF80837B5100FC /* Sources */,
+				3A54AC3321968D6A2B5C85BE /* UITests */,
+				59FD1531FC716572E28291A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59FD1531FC716572E28291A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3C651D34199D464128D982 /* PocketTalkSpike.app */,
+				9E3FFDBC1F1DC341617A5A52 /* PocketTalkSpikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB79B85F9BD4C3CF8B35B46D /* eval */ = {
+			isa = PBXGroup;
+			children = (
+				72F0724B8647B13CD9C68443 /* asr_sentences.json */,
+				C944E7ED8B22820F225A4CAF /* long_conversation.json */,
+				7B7A53825AAD749DA20AF317 /* scenarios.json */,
+				BDB9456A741E82532B15F582 /* system_prompt_compact.md */,
+				132B24FF3DB7DE6C0A7A36DD /* system_prompt.md */,
+			);
+			path = eval;
+			sourceTree = "<group>";
+		};
+		EB2AEE9C922628BC51EDFB0A /* pocket-talk */ = {
+			isa = PBXGroup;
+			children = (
+				AB79B85F9BD4C3CF8B35B46D /* eval */,
+			);
+			name = "pocket-talk";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D399C4C8A2B273191A848B /* PocketTalkSpikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C517E1C5C4125C025B459B66 /* Build configuration list for PBXNativeTarget "PocketTalkSpikeUITests" */;
+			buildPhases = (
+				B29A804547B452730850EB73 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D5015C22816FAA2DF1E597F /* PBXTargetDependency */,
+			);
+			name = PocketTalkSpikeUITests;
+			packageProductDependencies = (
+			);
+			productName = PocketTalkSpikeUITests;
+			productReference = 9E3FFDBC1F1DC341617A5A52 /* PocketTalkSpikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		56F8EBB60664E4CB694E9866 /* PocketTalkSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B81E1EF22788129CB7B724 /* Build configuration list for PBXNativeTarget "PocketTalkSpike" */;
+			buildPhases = (
+				B3A3DE1CD33957CEDBD2CA79 /* Sources */,
+				4E37DD17F1A502F98E33B6C8 /* Resources */,
+				B0F91169001AC1440FB149FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketTalkSpike;
+			packageProductDependencies = (
+				4D7798366B7905B855F26C61 /* PocketTalkCore */,
+			);
+			productName = PocketTalkSpike;
+			productReference = AB3C651D34199D464128D982 /* PocketTalkSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B35FDC7CC7400C5C1E22105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					12D399C4C8A2B273191A848B = {
+						DevelopmentTeam = M9N98B9A3K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56F8EBB60664E4CB694E9866;
+					};
+					56F8EBB60664E4CB694E9866 = {
+						DevelopmentTeam = M9N98B9A3K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 268A8EF5AF978C24737091E7 /* Build configuration list for PBXProject "PocketTalkSpike" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 53DA079FF88859104DB96724;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				34866A9D7C543C7BAE374940 /* XCLocalSwiftPackageReference "../../Package/PocketTalkCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 59FD1531FC716572E28291A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56F8EBB60664E4CB694E9866 /* PocketTalkSpike */,
+				12D399C4C8A2B273191A848B /* PocketTalkSpikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E37DD17F1A502F98E33B6C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B08290ECA6060B79E73AEC3 /* asr_sentences.json in Resources */,
+				9994BF95B435A42A1DB9A7F0 /* long_conversation.json in Resources */,
+				038F886AAAF0A78639ECB297 /* scenarios.json in Resources */,
+				D58364DEE6C6DAEAC4F3C063 /* system_prompt.md in Resources */,
+				35B7C53A208EB86AA7CAC4AB /* system_prompt_compact.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B29A804547B452730850EB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14793E64C5C018ABA636624F /* ScenarioRunnerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A3DE1CD33957CEDBD2CA79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD5EE311FB4EA39159EB1A4 /* ASRSentences.swift in Sources */,
+				430C1B126F5204B36A5C536D /* ASRTestView.swift in Sources */,
+				366D8242D3907E65569F8915 /* AudioSessionController.swift in Sources */,
+				9241FF35992E36D92BFB548E /* CacheExperiment.swift in Sources */,
+				788084C6D09723C3E54EF7D2 /* DeviceMetrics.swift in Sources */,
+				EAEDA20D9BB8DC6C643FFBA5 /* LiveSessionView.swift in Sources */,
+				7882E766AD99700CFDC20D68 /* MeasurementStore.swift in Sources */,
+				FFEFB2A2115E6311EA4921E5 /* PocketTalkSpikeApp.swift in Sources */,
+				CF0D11EC02B03351CFAFD6A7 /* RootView.swift in Sources */,
+				7C75AD0A5C0F87DD585457CA /* ScenarioRunnerView.swift in Sources */,
+				558EDE099AB7C45A77CD3D95 /* SpeechRecognizer.swift in Sources */,
+				AA8D350839F0353A8C775511 /* SpeechSynthesis.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D5015C22816FAA2DF1E597F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56F8EBB60664E4CB694E9866 /* PocketTalkSpike */;
+			targetProxy = CE140C2850D36AE8C6B0E608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E37777C158D0777314CA38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6C5FC9EB4B6D802FFB4C0046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9N98B9A3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pockettalk.spike.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketTalkSpike;
+			};
+			name = Release;
+		};
+		A8AFC1A14EFFC4C4AF56A524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9N98B9A3K;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pockettalk.spike;
+				PRODUCT_NAME = PocketTalkSpike;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB9529F71A69C1B7FD4D5D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D4BFF28FE0F15A87BA7BC61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9N98B9A3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pockettalk.spike.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketTalkSpike;
+			};
+			name = Debug;
+		};
+		ED7CEF419278F8D49AC0B141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9N98B9A3K;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pockettalk.spike;
+				PRODUCT_NAME = PocketTalkSpike;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268A8EF5AF978C24737091E7 /* Build configuration list for PBXProject "PocketTalkSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9529F71A69C1B7FD4D5D45 /* Debug */,
+				2E37777C158D0777314CA38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		28B81E1EF22788129CB7B724 /* Build configuration list for PBXNativeTarget "PocketTalkSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8AFC1A14EFFC4C4AF56A524 /* Debug */,
+				ED7CEF419278F8D49AC0B141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C517E1C5C4125C025B459B66 /* Build configuration list for PBXNativeTarget "PocketTalkSpikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BFF28FE0F15A87BA7BC61E /* Debug */,
+				6C5FC9EB4B6D802FFB4C0046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		34866A9D7C543C7BAE374940 /* XCLocalSwiftPackageReference "../../Package/PocketTalkCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Package/PocketTalkCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D7798366B7905B855F26C61 /* PocketTalkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PocketTalkCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B35FDC7CC7400C5C1E22105 /* Project object */;
+}
